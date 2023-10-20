@@ -24,5 +24,6 @@ useEffect(() => {
       }
     </div>
     </Layout>
+    
   )
 }
