@@ -25,6 +25,8 @@ function App() {
         <Route path="/electronics" element={<Electronics />}/>
       </Routes>
       
+      <ItemDetail />
+
     </BrowserRouter>
   )
 }

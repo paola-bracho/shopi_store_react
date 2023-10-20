@@ -1,3 +1,4 @@
+import { PlusIcon } from "@heroicons/react/24/solid"
 
 export const Item = (data) => {
     return (
@@ -6,14 +7,15 @@ export const Item = (data) => {
           <span className='absolute bottom-0 left-0 bg-white/60 rounded-lg text-black text-xs m-2 px-3 py-0.5'>{data.data.category.name}</span>
           <img className='w-full h-full object-cover rounded-lg' src={data.data.image} alt={data.data.description} />
           <div className='absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1'>
-            +
+          <PlusIcon className='h-6 w-6 text-black'></PlusIcon>
           </div>
         </figure>
+          <p className="text-xs text-gray-400">{data.data.category}</p>
         <p className='flex justify-between'>
-          <span className='text-sm font-light truncate mr-5'>{data.data.title}</span>
+          <span className='text-base font-light truncate mr-5'>{data.data.title}</span>
           <span className='text-lg font-medium'>${data.data.price}</span>
         </p>
-        <a href={`/item/${data.id}`}>Ver mas</a>
+        <a href={`/item/${data.id}`}> Ver mas</a>
       </div>
     )
   }
