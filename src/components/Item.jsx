@@ -1,4 +1,5 @@
 import { PlusIcon } from "@heroicons/react/24/solid"
+import { Link } from "react-router-dom"
 
 export const Item = (data) => {
     return (
@@ -15,7 +16,7 @@ export const Item = (data) => {
           <span className='text-base font-light truncate mr-5'>{data.data.title}</span>
           <span className='text-lg font-medium'>${data.data.price}</span>
         </p>
-        <a href={`/item/${data.id}`}> Ver mas</a>
+        <Link to={`/item/:id`}> Ver mas</Link>
       </div>
     )
   }

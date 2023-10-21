@@ -8,17 +8,17 @@ export const Navbar = () => {
             <ul className="flex items-center gap-10 text-gray-200">
                 <Link to="/" className="font-bold text-2xl text-gray-200"><h1>Shopi</h1></Link>
                 <li><Link to="/" className="">Home</Link></li>
-                <li><Link to="/women" className="">Women</Link></li>
-                <li><Link to="/men" className="">Men</Link></li>
-                <li><Link to="/jewerely" className="">Jewerely</Link></li>
-                <li><Link to="/electronics" className="">Electronics</Link></li>
+                <li><Link to={`/category/women's clothing`} className="">Women</Link></li>
+                <li><Link to={`/category/men's clothing`} className="">Men</Link></li>
+                <li><Link to={`/category/jewelery`} className="">Jewelery</Link></li>
+                <li><Link to={`/category/electronics`} className="">Electronics</Link></li>
             </ul>
 
             <ul className="flex items-center gap-10 text-gray-200">
-            <li><a href="#" className="">My order</a></li>
-            <li><a href="#" className="">My acount</a></li>
-            <li><a href="#" className=""></a>Sign In</li>
-            <li><a href="#" className=""><CartWidget /></a></li>
+            <li><Link to="#" className="">My order</Link></li>
+            <li><Link to="#" className="">My acount</Link></li>
+            <li><Link to="#" className=""></Link>Sign In</li>
+            <li><Link to="#" className=""><CartWidget /></Link></li>
             </ul>
         </nav>
     )
