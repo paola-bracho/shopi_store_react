@@ -8,6 +8,9 @@ import { Women } from './pages/Women'
 import { Jewerely } from './pages/Jewerely'
 import { Electronics } from './pages/Electronics'
 import { Men } from './pages/Men'
+import { getProducts } from './components/getProducts'
+
+getProducts()
 
 function App() {
 
@@ -25,7 +28,7 @@ function App() {
         <Route path="/electronics" element={<Electronics />}/>
       </Routes>
       
-      <ItemDetail />
+      <ItemDetailContainer />
 
     </BrowserRouter>
   )
